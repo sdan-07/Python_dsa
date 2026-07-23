@@ -78,7 +78,14 @@ def main():
     for node in nodes:
         tree.insert(node)
 
+    # inorder
     result = tree.inorder()
-    print(result)
+    print(f"Inorder:   {result}")
+    # preorder
+    result = tree.preorder()
+    print(f"Preorder:  {result}")
+    # postorder
+    result = tree.postorder()
+    print(f"Postorder: {result}")
 
 main()
