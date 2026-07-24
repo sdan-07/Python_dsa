@@ -2,3 +2,4 @@
 pyproject.toml
 uv.lock
 .idea
+test.py
