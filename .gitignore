@@ -4,3 +4,4 @@ uv.lock
 .idea
 test.py
 test2.py
+test_count.py
