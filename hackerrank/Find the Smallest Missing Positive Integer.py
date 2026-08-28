@@ -16,18 +16,13 @@ import sys
 
 def findSmallestMissingPositive(orderNumbers):
     n = len(orderNumbers)
-    if n <= 1: return n + 1
+    min_res = float('inf')
 
-    minimum = float('inf')
-    check = []
-    for i in range(1, n + 1):
-        check.append(i)
+    for i in range(1, n + 2):
+        if i not in orderNumbers:
+            min_res = min(min_res, i)
 
-    for num in check:
-        if num not in orderNumbers:
-            minimum = min(minimum, num)
-
-    return minimum
+    return min_res
 
 
 if __name__ == '__main__':
